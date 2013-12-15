@@ -7,4 +7,4 @@ game.state.add('GameOver', new LD28.GameOver());
 game.state.add('Hearticle', new LD28.Hearticle());
 
 //begin game
-game.state.start('OverWorld');
+game.state.start('MainMenu');

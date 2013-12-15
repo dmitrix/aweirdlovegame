@@ -12,7 +12,7 @@ LD28.OverWorld.prototype = {
 		
 		// Load Tiles
 		game.load.tilemap('map', 'res/maps/finalmap.json', null, Phaser.Tilemap.TILED_JSON);
-		game.load.tileset('tiles', 'res/images/tiles.png', 32, 32);
+		game.load.tileset('tiles', 'res/images/newtiles.png', 32, 32);
 		
 		// Load Particles
 		game.load.image('hearticles', 'res/images/hearticles.png');
@@ -47,9 +47,13 @@ LD28.OverWorld.prototype = {
 		// Tiles
 			map = game.add.tilemap('map');
 			tileset = game.add.tileset('tiles');
-			tileset.setCollisionRange(1, 33, true, true, true, true);
+			tileset.setCollisionRange(1, 24, true, true, true, true);
 			//tileset.setCollisionRange(34,36,true,true,true,true);
-			tileset.setCollisionRange(40,79,true,true,true,true);
+			tileset.setCollisionRange(27,33,true,true,true,true);
+			tileset.setCollisionRange(37,45,true,true,true,true);
+			tileset.setCollisionRange(48,55,true,true,true,true);
+			tileset.setCollisionRange(58,59,true,true,true,true);
+			tileset.setCollisionRange(61,63,true,true,true,true);
 			
 			layer = game.add.tilemapLayer(0,0,1024,640,tileset,map,0);
 			layer.resizeWorld();
